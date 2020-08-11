@@ -1,0 +1,26 @@
+### Create a pygame screen
+	screen = pygame.display.set_mode((widht in px, height in px))
+
+### To get the event(close,minimize,arrow etc) of pygame:
+	pygame.event.get()
+	eg: We want to close the window when press the Quit(X) button:
+	code: 
+	running = True
+	while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False 
+
+
+### Set the game window/caption.
+	 pygame.display.set_caption("Space Invader")
+
+### Set the game window icon.
+	icon = pygame.image.load('imageName')
+	pygame.display.set_icon(icon)
+
+### To give the background color of game window
+    screen.fill((RGB value))
+
+### Always Updating the game
+    pygame.display.update()
